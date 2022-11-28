@@ -1,0 +1,118 @@
+:root{
+    --h-font:'Staatliches', Sans-serif;
+    --p-font:sans-serif;
+    --main-color:#1D1D1D;
+    --accent-color:#FADD4B;
+    --main-background-color:#FFF5e5;
+    --margin:0 0 20px 0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    line-height: 1.4;
+    font-size:100%;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--h-font);
+}
+
+p{
+    font-family: var(--p-font);
+    font-size:1.2rem;
+    margin:var(--margin);
+}
+
+.word{
+    font-size:3.2rem;
+    border-bottom:5px solid;
+    width:50px;
+    margin:var(--margin);
+    cursor:pointer;
+}
+.fa-ear-listen{
+    font-size:2.5rem;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+.type-of-speech{
+    font-size:2rem;
+}
+.container{
+    height:100%;
+    display:grid;
+    grid-template-columns: 40% 60%;
+}
+
+.cfp{
+    font-size: 0.8rem;
+}
+
+aside{
+    background:url(/images/pexels-miggy-rivera-5665104.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:var(--accent-color);
+    padding:30px;
+    position:relative;
+}
+
+aside h1{
+    font-size:6rem;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-family:var(--p-font);
+    padding:30px;
+}
+
+main{
+    background-color: var(--accent-color);
+    padding:30px;
+    width:100%;
+    color:var(--main-color);
+}
+
+main h1{
+    font-size:4.5rem;
+    margin:var(--margin);
+}
+
+
+.info{
+    border-bottom:1px solid var(--main-color);
+    margin:var(--margin);
+}
+
+form{
+    margin:var(--margin);
+}
+
+.input-field{
+    width:50%;
+    padding:10px 5px;
+    font-size:1rem;
+    outline:none;
+    background-color: var(--accent-color);
+}
+
+.input-btn{
+    padding:10px 5px;
+    font-size:1rem;
+    cursor:pointer;
+    background-color: var(--main-color);
+    color:var(--accent-color);
+    outline:none;
+}
+
