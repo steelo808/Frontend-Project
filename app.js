@@ -31,7 +31,8 @@ $searchBtn.on('click',() => {
         console.log($typeOfSpeech);
         const $info = $('.info');
         console.log($info);
-        const $definition = $(`<p class= "definition">${data[i].meanings[0].definitions[0].definition}`);
+        const $definition = $(`<p class= "definition">${data[i].meanings[0].definitions[0].definition}</p>`);
+        console.log($definition);
         const $sound = $('<i class="fa-solid fa-ear-listen"></i>');
         const $p = $('<p class = "cfp">Click for Pronunciation</p>')
         const $audio = $(data[i].word.audio);
