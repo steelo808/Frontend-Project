@@ -11,6 +11,8 @@ $content.empty();
 }
 
 
+
+
 $searchBtn.on('click',() => {
     const $searchValue = $searchInput.val();
         console.log($searchValue);
@@ -37,6 +39,11 @@ $searchBtn.on('click',() => {
         const $p = $('<p class = "cfp">Click for Pronunciation</p>')
         const $audio = $(data[i].word.audio);
 
+
+        const $pronounce = $(".fa-ear-listen");
+
+        $pronounce.on('click')
+
         $mainContent.append($word);
         $mainContent.append($typeOfSpeech);
         $mainContent.append($info);
@@ -49,8 +56,7 @@ $searchBtn.on('click',() => {
 
 console.log(data);
 
-
-
     });
+
     });
 
