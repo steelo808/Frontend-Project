@@ -18,10 +18,6 @@ $searchBtn.on('click',() => {
         console.log($searchValue);
         removeNodes();
 
-
-
-
-
     $.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${$searchValue}`, (data)=>{
     console.log(data);
 
@@ -37,12 +33,12 @@ $searchBtn.on('click',() => {
         console.log($definition);
         const $sound = $('<i class="fa-solid fa-ear-listen"></i>');
         const $p = $('<p class = "cfp">Click for Pronunciation</p>')
-        const $audio = $(data[i].word.audio);
+        const $audioUrl = `https://api.dictionaryapi.dev/media/pronunciations/en/${$searchValue}-us.mp3`;
+        const $audio = $(`<audio controls><source src="${$audioUrl}" type="audio/mpeg">Your browser does not support this audio element.</audio>`)
 
 
         const $pronounce = $(".fa-ear-listen");
 
-        $pronounce.on('click')
 
         $mainContent.append($word);
         $mainContent.append($typeOfSpeech);
@@ -50,6 +46,7 @@ $searchBtn.on('click',() => {
         $mainContent.append($definition);
         $mainContent.append($sound);
         $mainContent.append($p);
+        $mainContent.append($audio);
         
 
     }
