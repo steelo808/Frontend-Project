@@ -67,12 +67,12 @@ main{
         flex-direction:row;
     }
 
-    aside, main{
+    aside, main{ 
         width:50%;
     }
 
     .word{
-        font-size:24px;
+        font-size:50px;
     }
 
     .type-of-speech{
